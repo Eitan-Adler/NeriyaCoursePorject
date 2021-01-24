@@ -16,7 +16,7 @@
   margin: 5px;
 }
 .contact-name {
-  font-family: Roboto;
+  font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -26,12 +26,11 @@
   margin: 5px;
 }
 .contact-last-message {
-  font-family: Roboto;
+  font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
-  display: flex;
   align-items: center;
   margin: 5px;
 }
