@@ -2,7 +2,8 @@ const contacts = [
   {
     id: 1,
     name: "Neriya, bar-lev",
-    lastMessage: "hello world",
+    lastMessage:
+      "Hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world ",
     img:
       "https://cdn1.vectorstock.com/i/1000x1000/38/05/male-face-avatar-logo-template-pictograph-vector-11333805.jpg",
   },
@@ -57,7 +58,11 @@ const ImgContainer = (props) => (
 const TextContainer = (props) => (
   <div className="text-container">
     <div className="contact-name">{props.name}</div>
-    <div className="contact-last-message">{props.lastMessage}</div>
+    <div className="contact-last-message">
+      {props.lastMessage.length > 30
+        ? `${props.lastMessage.slice(0, 30)}...`
+        : props.lastMessage}
+    </div>
   </div>
 );
 const ContactCard = (props) => (
