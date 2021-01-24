@@ -50,6 +50,12 @@ const contacts = [
       "https://previews.123rf.com/images/yupiramos/yupiramos1703/yupiramos170316303/74735483-young-people-avatars-group-vector-illustration-design.jpg",
   },
 ];
+const UserInfo = {
+  name: "Eitan Adler",
+  status: "online",
+  img:
+    "https://www.creativefabrica.com/wp-content/uploads/2019/12/04/AVATAR_FINAL_2-6-580x386.jpg",
+};
 const ImgContainer = (props) => (
   <div className="img-container">
     <img className="contact-img" src={props.img} />
@@ -84,10 +90,27 @@ const ChatList = () => (
     ))}
   </div>
 );
-
+const UserProfileTextContainer = () => (
+  <div className="user-profile-text-container">
+    <div className="user-name">{UserInfo.name}</div>
+    <div className="user-status">{UserInfo.status}</div>
+  </div>
+);
+const UserProfile = () => (
+  <div className="user-profile">
+    <img className="user-img" src={UserInfo.img} />
+    <UserProfileTextContainer />
+  </div>
+);
+const SideBar = () => (
+  <div className="side-bar">
+    <UserProfile />
+    <ChatList />;
+  </div>
+);
 const App = () => (
   <div className="App">
-    <ChatList />
+    <SideBar />
   </div>
 );
 ReactDOM.render(<App />, document.getElementById("app"));

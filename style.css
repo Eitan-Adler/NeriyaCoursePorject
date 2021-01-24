@@ -1,6 +1,6 @@
 .chat-list {
-  height: 400px;
-  width: 300px;
+  height: 60%;
+  width: 100%;
 }
 .contact-card {
   background-color: #b4ffa1;
@@ -8,6 +8,7 @@
   width: auto;
   border: 1px solid #b6b6b6;
   display: flex;
+  cursor: pointer;
 }
 .contact-img {
   border-radius: 300px;
@@ -33,4 +34,31 @@
   line-height: 16px;
   align-items: center;
   margin: 5px;
+}
+.user-profile {
+  height: 25%;
+  background: #73c184;
+  display: flex;
+}
+.side-bar {
+  width: 300px;
+  height: 600px;
+}
+.user-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+}
+.user-name {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  margin-top: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.user-status {
+  margin: 10px;
 }
